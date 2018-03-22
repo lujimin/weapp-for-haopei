@@ -12,7 +12,7 @@ class CompanyController {
     @Autowired
     lateinit var companyService: CompanyService
 
-    @GetMapping("/company")
+    @GetMapping("/companies")
     fun queryCompanyList(): List<Company> {
         return companyService.queryCompanyList()
     }
